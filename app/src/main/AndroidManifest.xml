@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CatalogoProductos">
         <activity
+            android:name=".MasProductosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarritoManager"
+            android:exported="false" />
+        <activity
+            android:name=".CarritoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

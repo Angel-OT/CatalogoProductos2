@@ -29,6 +29,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu correo"
+        android:inputType="textEmailAddress"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/buscador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/botonValidar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validar correo"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/correo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <LinearLayout
         android:id="@+id/producto1"
         android:layout_width="0dp"
@@ -36,7 +59,7 @@
         android:orientation="horizontal"
         android:padding="16dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/buscador"
+        app:layout_constraintTop_toBottomOf="@id/botonValidar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -64,6 +87,7 @@
                 android:text="$18,000 MXN"/>
 
             <Button
+                android:id="@+id/btnComprar1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Comprar"/>
@@ -106,6 +130,7 @@
                 android:text="$9,500 MXN"/>
 
             <Button
+                android:id="@+id/btnComprar2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Comprar"/>
@@ -148,6 +173,7 @@
                 android:text="$1,200 MXN"/>
 
             <Button
+                android:id="@+id/btnComprar3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Comprar"/>
@@ -157,12 +183,24 @@
 
     <Button
         android:id="@+id/botonFinal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver más productos"
+        android:layout_width="137dp"
+        android:layout_height="53dp"
         android:layout_marginBottom="20dp"
+        android:text="Más productos"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCarrito"
+        android:layout_width="115dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="20dp"
+        android:text="Ver Carrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
